@@ -1,3 +1,66 @@
 .calculator {
-    background-color: aqua;
+    display: grid;
+    background-color: rgb(82, 82, 82);
+    width: 500px;
+    height: 700px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    grid-template-areas:
+        "output"
+        "row1"
+        "row2"
+        "row3"
+        "row4";
+}
+
+.screen {
+    grid-area: output;
+    background-color: rgb(109, 182, 182);
+    width: 450px;
+    height: 150px;
+    margin: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.row1 {
+    grid-area: row1;
+    height: fit-content;
+    align-self: center;
+
+}
+
+.row2 {
+    grid-area: row2;
+    height: fit-content;
+    align-self: center;
+
+}
+
+.row3 {
+    grid-area: row3;
+    height: fit-content;
+    align-self: center;
+
+}
+
+.row4 {
+    grid-area: row4;
+    height: fit-content;
+    align-self: center;
+
+}
+
+
+button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    font-size: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
 }
