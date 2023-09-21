@@ -8,11 +8,10 @@ body {
 
 .calculator {
     display: grid;
+    justify-items: center;
     background-color: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: center;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     grid-template-areas:
         "display"
         "buttons";
@@ -21,23 +20,21 @@ body {
 
 .screen {
     grid-area: display;
-    box-sizing: border-box;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     max-width: 400px;
     width: 100%;
-    min-height: 100px;
-    overflow-x: auto;
+    height: 100px;
     font-size: 2rem;
+    overflow-x: auto;
 }
 
 .buttons {
     grid-area: buttons;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 button {
