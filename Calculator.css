@@ -24,8 +24,11 @@ body {
     box-sizing: border-box;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
+    max-width: 400px;
     width: 100%;
     min-height: 100px;
+    overflow-x: auto;
+    font-size: 2rem;
 }
 
 .buttons {
@@ -34,7 +37,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
     margin-top: 20px;
 }
 
