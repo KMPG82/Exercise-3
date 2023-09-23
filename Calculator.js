@@ -6,6 +6,7 @@ class Calculator {
 
     inputNumber(number) {
         if (this.equation !== '') {
+            //might need to cast both as a string then concatanate
             this.equation += number;
         }
         else {
@@ -43,6 +44,13 @@ const calculator = new Calculator(output);
 buttonForNumber.forEach(button => {
     button.addEventListener('click', () => {
         calculator.inputNumber(button.innerText);
+        calculator.update();
+    })
+})
+
+buttonForOperator.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.operationChoice(button.innerText);
         calculator.update();
     })
 })
