@@ -26,10 +26,12 @@ function addOperator(operator) {
 
 function calculate() {
     inputNumbers.push(operand)
-    inputNumbers.reverse()
+    inputNumbers.reverse();
+    inputOperators.reverse();
+
     let output = 0;
 
-    while (inputOperators.length !== 0) {
+    while (inputOperators.length !== 1) {
         if (inputOperators[0] === '+') {
             output += parseInt(inputNumbers[inputNumbers.length - 1]) + parseInt(inputNumbers[inputNumbers.length - 2]);
             inputOperators.pop();
