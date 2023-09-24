@@ -36,7 +36,7 @@ function calculate() {
             inputNumbers.pop()
             inputNumbers.pop()
 
-            display.innerText = output
+            display.innerText =
         }
     }
 }
