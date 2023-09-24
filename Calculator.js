@@ -27,16 +27,16 @@ function addOperator(operator) {
 function calculate() {
     inputNumbers.push(operand)
     inputNumbers.reverse()
-    let ouput = 0;
+    let output = 0;
 
     while (inputOperators.length !== 0) {
-        if (inputOperators[0] == '+') {
-            output = Number(inputNumbers[inputNumbers.length - 2]) + Number(inputNumbers[inputNumbers.length - 1]);
+        if (inputOperators[0] === '+') {
+            output += parseInt(inputNumbers[inputNumbers.length - 1]) + parseInt(inputNumbers[inputNumbers.length - 2]);
             inputOperators.pop();
             inputNumbers.pop()
             inputNumbers.pop()
 
-            display.innerText =
+            display.innerText = output
         }
     }
 }
