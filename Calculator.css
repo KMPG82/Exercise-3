@@ -8,6 +8,7 @@ body {
     background-size: 170rem;
     background-position-y: -27rem;
     background-position-x: -3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .calculator {
@@ -33,7 +34,7 @@ body {
     padding: 10px;
     overflow-x: auto;
     overflow-y: auto;
-    background: linear-gradient(#f30049, #F9A01B);
+    background: linear-gradient(#ff004c, #ff9900);
 }
 
 .buttons {
@@ -45,6 +46,8 @@ body {
 }
 
 button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     border-radius: 5%;
     background-color: #98002E;
     width: 100px;
