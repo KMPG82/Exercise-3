@@ -2,14 +2,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("heat-wallpaper.webp");
     height: 100vh;
-    background-color: brown;
+    background-repeat: no-repeat;
+    background-size: 170rem;
+    background-position-y: -27rem;
+    background-position-x: -3rem;
+
+
 }
 
 .calculator {
     display: grid;
     justify-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     border-radius: 15px;
     padding: 10px;
     grid-template-areas:
@@ -30,7 +36,7 @@ body {
     padding: 10px;
     overflow-x: auto;
     overflow-y: auto;
-
+    background: linear-gradient(#f30049, #F9A01B);
 }
 
 .buttons {
@@ -43,13 +49,15 @@ body {
 
 button {
     border-radius: 5%;
-    background-color: bisque;
+    background-color: #98002E;
     width: 100px;
     height: 100px;
     font-size: 2rem;
+    color: #F9A01B;
+
 }
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(255, 241, 223);
+    background-color: #b90038;
 }
